@@ -16,8 +16,8 @@ Prepared data in .mat extension (results1_data & results2_data) consists of only
    - MATLAB or any tool capable of reading '.mat' files is required.
    - [Additional dependencies if needed].
 
-2. **Loading the '.mat' File**:
+2. **Loading the `.mat` File**:
    - To load the 'data.mat' file into MATLAB, use the following command:
-   '''matlab
-   load('pos_vel_data.mat');
-   load('results1_data.mat');
+   ```matlab
+   load(`pos_vel_data.mat`);
+   load(`results1_data.mat`);
