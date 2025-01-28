@@ -8,7 +8,7 @@
 ## File Decriptions
 Prepared data in .mat extension (`results1_data.mat` & `results2_data.mat`) consists of only estimation results (340312x6). It is given to use this in section from `"Results validation"` till the end. Firstly load the test data contained in the `pos_vel_data.mat` file
 - **`results1_data.mat`** & **`results2_data.mat`**:
-  - Each row represents a signle estimation for position and velocity in X, Y, Z axis `[pX, pY, pZ, vX, vY, vZ]`
+  - Each row represents a single estimation for position and velocity in X, Y, Z axis `[pX, pY, pZ, vX, vY, vZ]`
   - Each column corresponds to a specified time value
 
 ## Usage Instructions
