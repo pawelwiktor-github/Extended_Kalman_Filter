@@ -10,9 +10,18 @@
 ## General Description
 This section is dedicated to the execution of Extended Kalman Filter (EKF) in ECEF sphere. This instruction consists of file decsriptions, usage instructions and results.
 
+![Satelite trajectory ECEF](/screenshots/trajectory.jpg)
+
+As a refference data the FCC measurements were used and as a correction data GPS measurements were used.
+
+![DataPosition](/screenshots/measurement_position.jpg)
+![DataVelocity](/screenshots/measurement_velocity.jpg)
+
+Specified describtion how to use this scripts, equations and results are presented in [EKF.pdf](/docs/EKF.pdf)
+
 ## Usage Instructions
 1. **Prerequisites**:
-   - MATLAB 2024b+ or any tool capable of reading (`.m`, `.mat`, `.slx`) files is required. Additionaly Simulink extension is obligatory
+   - MATLAB 2024b+ or any tool capable of reading (`.m`, `.mat`) files is required
 
 2. **Execution**:
    - Open `EKF.m` to estimate position and velocity of a satelite in [X,Y,Z] axis 
@@ -33,8 +42,10 @@ This section is dedicated to the execution of Extended Kalman Filter (EKF) in EC
 - [rk4.m](/src/rk4.m) performs RK4 integration
 - [vector_to_matrix.m](/src/vector_to_matrix.m) rewrites a vector into a matrix
 
+ATTENTION! There is no need to open positions from 2 to 8. They are appropriately used in [EKF.m](/src/EKF.m) as auxiliary functions.
+
 ### Data:
-- [pos_vel_data.mat](/src/pos_vel_data.mat) data with GPS (correction) measurements and with FFL (refference) measurements
+- [pos_vel_data.mat](/src/pos_vel_data.mat) data with GPS (correction) measurements and with FCC (refference) measurements
 - [results1_data.mat](/tests/results1_data.mat) data of executed EKF prediction with STPu = 10
 - [results2_data.mat](/tests/results2_data.mat) data of executed EKF prediction with STPu = 100
 
